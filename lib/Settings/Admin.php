@@ -34,7 +34,15 @@ class Admin implements ISettings
 
         return new TemplateResponse('piwik', 'settings/admin', $parameters);
     }
-   
+
+    /**
+    * @return the admin panel
+    */
+    public function getPanel()
+    {
+        return new TemplateResponse('piwik', 'settings/admin');
+    }
+    
     /**
      * @return string the section ID, e.g. 'sharing'
      */
