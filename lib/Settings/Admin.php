@@ -34,11 +34,11 @@ class Admin implements ISettings
 
         return new TemplateResponse('piwik', 'settings/admin', $parameters);
     }
-
+   
     /**
      * @return string the section ID, e.g. 'sharing'
      */
-    public function getSection()
+    public function getSectionID()
     {
         return 'additional';
     }
